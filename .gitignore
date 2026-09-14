@@ -23,7 +23,6 @@
 *.dll
 *.so.*
 
-
 # Fortran module files
 *.mod
 *.smod
@@ -43,6 +42,7 @@
 build/
 Build/
 build-*/
+build_*/        # ESP-IDF build_xxx目录
 
 # CMake generated files
 CMakeFiles/
@@ -67,3 +67,75 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# ========= ESP-IDF 嵌入式补充 =========
+*.elf
+*.bin
+*.map
+*.hex
+sdkconfig.old
+
+# ========= Qt / QML 补充 =========
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+qmlcache/
+*.qmlc
+*.jsc
+.qtcreator/
+.qtcreator.user
+.autosave
+
+# ========= IDE / 系统文件 =========
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ================= SolidWorks 建模相关 =================
+# SolidWorks 缓存/临时文件
+*.sldlfp
+*.sldftp
+*.sldbmp
+*.tif
+*.jpg
+*.png
+
+# SolidWorks 参考引用缓存、外部参考索引
+*.sldrefprp
+*.sldreg
+*.sldusg
+
+# 仿真 Simulation 结果文件（体积巨大！）
+*.sldresut
+*.sldrsl
+*.sldsim
+*.cwr
+*.op2
+*.h3d
+*.rdm
+
+# 如需忽略STL/STEP导出文件，取消下面行前面#
+# *.step
+# *.stp
+# *.iges
+# *.igs
+# *.stl
+
+# SolidWorks 自动生成的日志、备份
+*.bak
+*.zip
+*.rar
+SolidWorks Log*.txt
+
+# 快速预览缩略图缓存文件夹
+_Thumbnails/
+thumbnails/
+
+# 装配体外部参考搜索缓存
+FileReferences.log
