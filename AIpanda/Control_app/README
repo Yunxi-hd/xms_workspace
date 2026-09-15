@@ -1,1 +1,3 @@
 使用qt quick开发
+
+在 qt creator打开文件cmakelist然后构建项目
